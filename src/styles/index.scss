@@ -1,0 +1,33 @@
+@import "./introduction";
+@import "./skills";
+@import "./projects";
+@import "./footer";
+@import "./about";
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: white;
+  margin: 0;
+}
+#root {
+  background-color: transparent;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-between {
+  justify-content: space-between;
+}
+
+.f-col {
+  flex-direction: column;
+}

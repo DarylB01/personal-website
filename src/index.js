@@ -1,12 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./styles/index.css";
+import * as serviceWorker from "./serviceWorker";
+import Skills from "./components/skills";
+import Introduction from "./components/introduction";
+import About from "./components/about";
+import Projects from "./components/projects";
+import Footer from "./components/footer";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class Index extends React.Component {
+  state = {};
+  render() {
+    return (
+      <React.Fragment>
+        <Introduction />
+        {/* <About /> */}
+        <Skills />
+        <Projects />
+        <Footer />
+      </React.Fragment>
+    );
+  }
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+ReactDOM.render(<Index />, document.getElementById("root"));
+
 serviceWorker.unregister();

@@ -1,0 +1,64 @@
+@import "./variables";
+
+.skills {
+  margin: 0 auto;
+  height: 80vh;
+  width: 100%;
+  padding-top: 150px;
+  background-color: $light-gray;
+  @include for-phone {
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .skills-title {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.788);
+    font-weight: bold;
+    @include for-phone {
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+  }
+  .skills-list {
+    margin: auto auto;
+    height: 70%;
+    width: 50%;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    @include for-phone {
+      width: 95%;
+    }
+    li {
+      padding-top: 20px;
+      background-color: white;
+      font-size: 18px;
+      font-weight: bold;
+      align-items: center;
+      text-align: center;
+      height: 220px;
+      width: 26%;
+      border-radius: 2px;
+      -webkit-box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.33);
+      -moz-box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.33);
+      box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.33);
+      @include for-phone {
+        width: 48%;
+        height: 170px;
+        margin-top: 20px;
+      }
+      img {
+        margin: 10px 0 30px 0;
+        width: 55%;
+        @include for-phone {
+          width: 45%;
+        }
+      }
+    }
+  }
+}

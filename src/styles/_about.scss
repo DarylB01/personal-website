@@ -1,0 +1,25 @@
+.about-container {
+  text-align: center;
+  position: absolute;
+  z-index: -99;
+  top: 100vh;
+  right: 0;
+  height: 400px;
+  width: 100vw;
+  .about-background {
+    display: block;
+    height: 100%;
+    background: rgb(13, 125, 171);
+    background: linear-gradient(
+      0deg,
+      rgb(30, 163, 216) 0%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    .about-title {
+      padding-top: 50px;
+    }
+  }
+}
