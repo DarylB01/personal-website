@@ -1,7 +1,7 @@
 import React from "react";
 import projectList from "./projectList";
 import goToImg from "../imgs/goto.png";
-import gitHubImg from "../imgs/github.png";
+import gitHubImg from "../imgs/footer/github-logo.png";
 
 const Projects = () => {
   return (

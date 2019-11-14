@@ -4,14 +4,15 @@
 .intro-container {
   margin: 0 auto;
   height: 100vh;
-  width: 55%;
+  max-width: 900px;
+  min-width: 700px;
   overflow: hidden;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   @include for-phone {
-    width: 100%;
+    min-width: 100%;
   }
   nav {
     padding-top: 20px;

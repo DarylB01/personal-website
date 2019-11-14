@@ -1,27 +1,23 @@
 import React from "react";
+import gmailImg from "../imgs/footer/gmail.png";
+import linkedInImg from "../imgs/footer/linkedin.png";
+import gitHubImg from "../imgs/footer/github-logo.png";
 
 const footer = () => {
   return (
     <footer id="bottom" className="flex f-col">
       <div className="contact">Contact</div>
       <ul className="links flex">
-        <a>
-          <img
-            src="https://img.icons8.com/dusk/128/000000/gmail.png"
-            alt="link img"
-          />
+        <a
+        href="mailto:dbotengan02@gmail.com"
+        >
+          <img src={gmailImg} alt="link img" />
         </a>
         <a>
-          <img
-            src="https://img.icons8.com/dusk/128/000000/linkedin.png"
-            alt="link img"
-          />
+          <img src={linkedInImg} alt="link img" />
         </a>
-        <a>
-          <img
-            src="https://img.icons8.com/dusk/128/000000/github.png"
-            alt="link img"
-          />
+        <a href="https://github.com/DarylB01"> 
+          <img src={gitHubImg} alt="link img" />
         </a>
       </ul>
       <div className="copyright">Made by Daryl B. © 2019</div>

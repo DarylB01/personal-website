@@ -1,27 +1,33 @@
 import React from "react";
+import htmlImg from "../imgs/skills-imgs/html5.png";
+import cssImg from "../imgs/skills-imgs/css-3.png";
+import jsImg from "../imgs/skills-imgs/javascript.png";
+import reactImg from "../imgs/skills-imgs/react.png";
+import bootstrapImg from "../imgs/skills-imgs/bootstrap.png";
+import sassImg from "../imgs/skills-imgs/sass.png";
 
 function Skills() {
   const skills = [
     {
       name: "HTML5",
-      imgSrc: "https://img.icons8.com/color/96/000000/html-5.png"
+      imgSrc: htmlImg
     },
-    { name: "CSS3", imgSrc: "https://img.icons8.com/color/96/000000/css3.png" },
+    { name: "CSS3", imgSrc: cssImg },
     {
       name: "SASS",
-      imgSrc: "https://img.icons8.com/windows/96/000000/sass.png"
+      imgSrc: sassImg
     },
     {
       name: "Javascript",
-      imgSrc: "https://img.icons8.com/color/96/000000/javascript.png"
+      imgSrc: jsImg
     },
     {
       name: "Bootstrap",
-      imgSrc: "https://img.icons8.com/color/96/000000/bootstrap.png"
+      imgSrc: bootstrapImg
     },
     {
       name: "React",
-      imgSrc: "https://img.icons8.com/color/96/000000/react-native.png"
+      imgSrc: reactImg
     }
   ];
   return (

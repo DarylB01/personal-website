@@ -1,7 +1,7 @@
-import battleshipImg from "../imgs/project-imgs/battleship2.png";
-import weatherImg from "../imgs/project-imgs/weather2.png";
+import battleshipImg from "../imgs/project-imgs/battleship.svg";
+import weatherImg from "../imgs/project-imgs/weather.svg";
 import restaurantImg from "../imgs/project-imgs/restaurant.jpg";
-import ticTacToeImg from "../imgs/project-imgs/tic-tac-toe.jpg";
+import ticTacToeImg from "../imgs/project-imgs/tic-tac-toe.png";
 import libraryImg from "../imgs/project-imgs/library.jpg";
 
 class Project {
@@ -17,7 +17,7 @@ const battleship = new Project(
   "Battleship",
   battleshipImg,
   "A simple battleship app with an AI as an opponent. The testing I used for this was the React Testing Library",
-  ["HTML5", "CSS3", "SASS", "Javascript", "Jest", "React"],
+  ["HTML5", "CSS3", "SASS", "Javascript", "React Testing Library", "React"],
   "https://darylb01-battleship.netlify.com/",
   "https://github.com/DarylB01/battleship"
 );
