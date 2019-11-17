@@ -50,7 +50,7 @@ const ticTacToe = new Project(
   ticTacToeImg,
   "A fun tic tac toe game you can play! You have a choice to play against an AI or human opponent",
   ["HTML5", "CSS3", "Javascript"],
-  "https://tictactoe-daryl.herokuapp.com/index.html",
+  "https://darylb01-tic-tac-toe.netlify.com/",
   "https://github.com/DarylB01/tic-tac-toe"
 );
 const library = new Project(

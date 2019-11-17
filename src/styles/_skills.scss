@@ -4,12 +4,10 @@
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  padding: 100px 0;
+  padding: 50px 0;
   background-color: $light-gray;
   @include for-phone {
     height: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
   .skills-title {
     text-align: center;
@@ -37,20 +35,17 @@
       max-width: 95%;
     }
     li {
+      color: rgb(65, 65, 65);
       padding-top: 20px;
       padding-bottom: 20px;
       margin-bottom: 100px;
-      background-color: white;
+      background-color: transparent;
       font-size: 18px;
       font-weight: bold;
       align-items: center;
       text-align: center;
       height: 170px;
       width: 26%;
-      border-radius: 50%;
-      -webkit-box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.33);
-      -moz-box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.33);
-      box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.33);
       @include for-phone {
         width: 48%;
         height: 170px;
@@ -62,10 +57,7 @@
       img {
         opacity: 0.9;
         margin: 10px 0 30px 0;
-        width: 40%;
-        @include for-phone {
-          width: 40%;
-        }
+       
       }
     }
   }

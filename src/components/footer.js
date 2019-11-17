@@ -13,7 +13,8 @@ const footer = () => {
         >
           <img src={gmailImg} alt="link img" />
         </a>
-        <a>
+        <a
+        href="https://www.linkedin.com/in/daryl-botengan-061954197/">
           <img src={linkedInImg} alt="link img" />
         </a>
         <a href="https://github.com/DarylB01"> 

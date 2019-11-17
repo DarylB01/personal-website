@@ -77,7 +77,7 @@
     font-size: 39px;
     font-weight: bold;
     @include for-phone {
-      font-size: 28px;
+      font-size: 35px;
     }
   }
   .aboutMe {
@@ -85,7 +85,6 @@
     font-size: 22px;
     font-weight: 100;
     @include for-phone {
-      font-size: 18px;
     }
   }
 }
@@ -94,7 +93,6 @@
   .avatar-img {
     width: 180px;
     @include for-phone {
-      width: 150px;
     }
   }
 }
