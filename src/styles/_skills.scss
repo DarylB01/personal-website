@@ -24,7 +24,7 @@
   .skills-list {
     margin: auto auto;
     height: 70%;
-    max-width: 900px;
+    max-width: 1000px;
     min-width: 700px;
     list-style: none;
     flex-wrap: wrap;
@@ -45,7 +45,7 @@
       align-items: center;
       text-align: center;
       height: 170px;
-      width: 26%;
+      width: 25%;
       @include for-phone {
         width: 48%;
         height: 170px;

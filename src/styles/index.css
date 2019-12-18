@@ -187,7 +187,7 @@
 .skills .skills-list {
   margin: auto auto;
   height: 70%;
-  max-width: 900px;
+  max-width: 1000px;
   min-width: 700px;
   list-style: none;
   -ms-flex-wrap: wrap;
@@ -218,7 +218,7 @@
           align-items: center;
   text-align: center;
   height: 170px;
-  width: 26%;
+  width: 25%;
 }
 
 @media (max-width: 699px) {

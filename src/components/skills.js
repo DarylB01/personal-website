@@ -5,6 +5,8 @@ import jsImg from "../imgs/skills-imgs/javascript.png";
 import reactImg from "../imgs/skills-imgs/react.png";
 import bootstrapImg from "../imgs/skills-imgs/bootstrap.png";
 import sassImg from "../imgs/skills-imgs/sass.png";
+import nodeImg from "../imgs/skills-imgs/nodejs.png";
+import expressImg from "../imgs/skills-imgs/expressjs.png";
 
 function Skills() {
   const skills = [
@@ -28,6 +30,14 @@ function Skills() {
     {
       name: "React",
       imgSrc: reactImg
+    },
+    {
+      name: "NodeJS",
+      imgSrc: nodeImg
+    },
+    {
+      name: "Express",
+      imgSrc: expressImg
     }
   ];
   return (

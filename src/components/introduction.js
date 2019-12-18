@@ -1,7 +1,6 @@
 import React from "react";
-import avatar from "../imgs/google-avatar.png";
+import avatar from "../imgs/headshot.svg";
 import computerBackground from "../imgs/top-background.svg";
-import logo from "../imgs/logo.png";
 
 const Introduction = () => {
   return (
@@ -21,7 +20,7 @@ const Introduction = () => {
       </nav>
       <section className="introduction">
         <div className="name">Daryl Botengan</div>
-        <p className="aboutMe">Front-End Web Developer</p>
+        <p className="aboutMe">Web Developer</p>
       </section>
       <section className="picBio">
         <img src={avatar} alt="avatar img" className="avatar-img"></img>

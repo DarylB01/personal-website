@@ -1,7 +1,7 @@
 import battleshipImg from "../imgs/project-imgs/battleship.svg";
 import weatherImg from "../imgs/project-imgs/weather.svg";
 import restaurantImg from "../imgs/project-imgs/restaurant.jpg";
-import ticTacToeImg from "../imgs/project-imgs/tic-tac-toe.png";
+import ticTacToeImg from "../imgs/project-imgs/tic-tac-toe.svg";
 import libraryImg from "../imgs/project-imgs/library.jpg";
 
 class Project {
