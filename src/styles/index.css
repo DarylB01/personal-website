@@ -1,5 +1,6 @@
 .intro-container {
   margin: 0 auto;
+  padding-top: 50px;
   height: 100vh;
   max-width: 900px;
   min-width: 700px;
@@ -24,35 +25,57 @@
 }
 
 .intro-container nav {
-  padding-top: 20px;
-  width: 95%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0 5px 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 999;
+  background-color: white;
+}
+
+.intro-container nav .nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  text-align: start;
+  width: 20px;
+}
+
+.intro-container nav .nav-logo a {
+  font-size: 22px;
+  font-family: "Molle", cursive;
+  color: #1a98d3;
 }
 
 .intro-container nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 220px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.intro-container nav .nav-logo {
-  height: 60px;
-}
-
 @media (max-width: 699px) {
   .intro-container nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-top: 10px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     z-index: 99;
-    position: fixed;
-    top: 0;
     width: 100%;
     background-color: #1a98d3;
   }
@@ -62,7 +85,7 @@
   text-decoration: none;
   color: rgba(95, 95, 95, 0.932);
   font-size: 20px;
-  margin-left: 50px;
+  margin-left: 20px;
   height: 30px;
 }
 
@@ -73,7 +96,6 @@
 @media (max-width: 699px) {
   .intro-container nav a {
     margin-right: 20px;
-    color: white;
   }
 }
 
