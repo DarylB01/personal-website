@@ -1,45 +1,49 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import avatar from "../imgs/headshot.svg";
-import computerBackground from "../imgs/top-background.svg";
-import scrollFunction from "./scrollFunction";
+import SocialLinks from "./SocialLinks";
 
-const Introduction = () => {
+const Introduction = props => {
   return (
-    <section className="intro-container" id="intro-container">
-      <Navbar />
+    <aside className="intro-container" id="">
+      <section className="picBio">
+        <img src={avatar} alt="avatar img" className="avatar-img"></img>
+      </section>
       <section className="introduction">
         <div className="name">Daryl Botengan</div>
         <p className="aboutMe">Web Developer</p>
       </section>
-      <section className="picBio">
-        <img src={avatar} alt="avatar img" className="avatar-img"></img>
-      </section>
-      <img
-        className="top-background"
-        src={computerBackground}
-        alt="background img"
-      ></img>
-    </section>
+      <Navbar activePage={props.activePage} />
+      <SocialLinks />
+    </aside>
   );
 };
 
-const Navbar = () => {
-  scrollFunction();
+const Navbar = props => {
+  // scrollFunction();
   return (
-    <nav id="navbar">
-      <div className="nav-logo">
-        <a href="#intro-container" id="nav-logo">
-          db
-        </a>
-      </div>
+    <nav id="#myMenu">
       <div className="nav-links">
-        <a href="#projects" className="nav-link">
-          Projects
-          <hr />
+        <a data-menuanchor="Home" href="#Home" className="nav-link">
+          Home
+          <hr style={props.activePage === "Home" ? { width: "100%" } : null} />
         </a>
-        <a href="#bottom" className="nav-link">
+        <a data-menuanchor="Skills" href="#Skills" className="nav-link">
+          Skills
+          <hr
+            style={props.activePage === "Skills" ? { width: "100%" } : null}
+          />
+        </a>
+        <a data-menuanchor="Projects" href="#Projects" className="nav-link">
+          Projects
+          <hr
+            style={props.activePage === "Projects" ? { width: "100%" } : null}
+          />
+        </a>
+        <a data-menuanchor="Contact" href="#Contact" className="nav-link">
           Contact
-          <hr />
+          <hr
+            style={props.activePage === "Contact" ? { width: "100%" } : null}
+          />
         </a>
       </div>
     </nav>

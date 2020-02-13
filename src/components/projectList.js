@@ -25,7 +25,7 @@ const blog = new Project(
 const battleship = new Project(
   "Battleship",
   battleshipImg,
-  "A simple battleship app with an AI as an opponent. The testing I used for this was the React Testing Library",
+  "A simple battleship app with an AI as an opponent",
   ["HTML5", "CSS3", "SASS", "Javascript", "React Testing Library", "React"],
   "https://darylb01-battleship.netlify.com/",
   "https://github.com/DarylB01/battleship"
@@ -33,7 +33,7 @@ const battleship = new Project(
 const restaurant = new Project(
   "Restaurant Website",
   restaurantImg,
-  "Restaurant Page mockup where I first learned to practice React",
+  "Demo site of made-up restaurant",
   ["HTML5", "CSS3", "Javascript", "React"],
   "https://darylb01-restaurant.netlify.com",
   "https://github.com/DarylB01/restaurant-page/tree/master"
@@ -57,7 +57,7 @@ const Weather = new Project(
 const ticTacToe = new Project(
   "Tic Tac Toe",
   ticTacToeImg,
-  "A fun tic tac toe game you can play! You have a choice to play against an AI or human opponent",
+  "Classic game that you can play with friends or an AI",
   ["HTML5", "CSS3", "Javascript"],
   "https://darylb01-tic-tac-toe.netlify.com/",
   "https://github.com/DarylB01/tic-tac-toe"

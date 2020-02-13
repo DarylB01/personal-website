@@ -1,0 +1,54 @@
+nav {
+  margin-top: 50px;
+  width: 100%;
+  padding: 10px 0 5px 0;
+  width: 100%;
+  justify-content: space-around;
+  transition: 0.3s;
+  z-index: 999;
+  background-color: transparent;
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+  }
+  @include for-phone {
+    justify-content: space-between;
+    padding-top: 10px;
+    align-items: center;
+    z-index: 99;
+    width: 100%;
+  }
+  a {
+    padding-left: 100px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: start;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    height: 40px;
+    transition: color 0.3s;
+    &:focus {
+      outline: none;
+    }
+    @include for-phone {
+      margin-right: 20px;
+    }
+    hr {
+      margin-left: -100px;
+      margin-top: 5px;
+      width: 0%;
+      height: 1px;
+      background-color: white;
+      border: none;
+      transition: 0.2s;
+    }
+    &:hover {
+      hr {
+        width: 100%;
+      }
+    }
+  }
+}

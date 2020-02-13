@@ -1,20 +1,34 @@
 @import "./introduction";
 @import "./skills";
 @import "./projects";
-@import "./footer";
+@import "./socialLinks";
 @import "./about";
+@import "./nav";
+@import "./contact";
 
-html {
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  text-decoration: none;
+  scrollbar-width: none;
   scroll-behavior: smooth;
 }
 
-* {
-  font-family: "Poppins", sans-serif;
-}
 body {
   background-color: white;
   margin: 0;
 }
+
+main {
+  margin-right: 25%;
+  position: relative;
+  .section {
+    transition: 0.4s;
+  }
+}
+
 #root {
   background-color: transparent;
   margin: 0 auto;
