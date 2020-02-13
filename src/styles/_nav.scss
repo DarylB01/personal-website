@@ -7,11 +7,21 @@ nav {
   transition: 0.3s;
   z-index: 999;
   background-color: transparent;
+  @include for-phone {
+    background-color: rgba(77, 73, 73, 0.788);
+    position: absolute;
+    top: 60px;
+    margin: 0;
+  }
   .nav-links {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 70%;
+    @include for-phone {
+      text-align: center;
+      width: 100%;
+    }
   }
   @include for-phone {
     justify-content: space-between;
@@ -30,11 +40,12 @@ nav {
     font-size: 18px;
     height: 40px;
     transition: color 0.3s;
+    @include for-phone {
+      padding-left: 0;
+      text-align: center;
+    }
     &:focus {
       outline: none;
-    }
-    @include for-phone {
-      margin-right: 20px;
     }
     hr {
       margin-left: -100px;

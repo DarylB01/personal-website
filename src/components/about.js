@@ -8,7 +8,7 @@ const about = props => {
     <section className="about-container section" ref={props.about}>
       <div className="about__text">
         {props.activePage !== "Home" ? null : (
-          <Typist avgTypingDelay={20} startDelay={1000}>
+          <Typist avgTypingDelay={10} startDelay={800}>
             <span> Hello, my name is Daryl Botengan.</span>
             <br />
             <br />

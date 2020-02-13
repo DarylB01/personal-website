@@ -23,7 +23,17 @@
 
 @media (max-width: 699px) {
   .intro-container {
-    min-width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -35,7 +45,10 @@
 
 @media (max-width: 699px) {
   .introduction {
-    margin-top: 100px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -48,6 +61,7 @@
 @media (max-width: 699px) {
   .introduction .name {
     font-size: 35px;
+    display: none;
   }
 }
 
@@ -58,12 +72,24 @@
   font-weight: 100;
 }
 
+@media (max-width: 699px) {
+  .introduction .aboutMe {
+    display: none;
+  }
+}
+
 .picBio {
   text-align: center;
 }
 
 .picBio .avatar-img {
   width: 150px;
+}
+
+@media (max-width: 699px) {
+  .picBio .avatar-img {
+    height: 50px;
+  }
 }
 
 .top-background {
@@ -99,7 +125,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(175, 174, 174, 0.521);
+  background: rgba(175, 174, 174, 0.212);
 }
 
 .skills__container .skills__browser {
@@ -115,7 +141,7 @@
 }
 
 .skills__container .skills__browser .browser__nav {
-  background-color: rgba(48, 47, 47, 0.322);
+  background-color: rgba(11, 10, 68, 0.534);
   width: 100%;
   height: 8%;
   border: none;
@@ -170,14 +196,14 @@
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   overflow: hidden;
-  background-color: #d4d1d1;
+  background-color: rgba(11, 10, 68, 0.534);
   color: white;
   padding-top: 5px;
   text-align: center;
 }
 
 .skills__container .skills__browser .browser__tabs .browser__tab:hover {
-  background-color: #8b8b8b;
+  background-color: rgba(11, 10, 68, 0.301);
   color: white;
 }
 
@@ -414,8 +440,8 @@
 }
 
 .about-container {
+  opacity: 0;
   position: relative;
-  background-color: yellow;
   background-image: url("../imgs/aboutImg.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -452,6 +478,15 @@ nav {
   background-color: transparent;
 }
 
+@media (max-width: 699px) {
+  nav {
+    background-color: rgba(77, 73, 73, 0.788);
+    position: absolute;
+    top: 60px;
+    margin: 0;
+  }
+}
+
 nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -464,6 +499,13 @@ nav .nav-links {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 70%;
+}
+
+@media (max-width: 699px) {
+  nav .nav-links {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 @media (max-width: 699px) {
@@ -493,14 +535,15 @@ nav a {
   transition: color 0.3s;
 }
 
-nav a:focus {
-  outline: none;
-}
-
 @media (max-width: 699px) {
   nav a {
-    margin-right: 20px;
+    padding-left: 0;
+    text-align: center;
   }
+}
+
+nav a:focus {
+  outline: none;
 }
 
 nav a hr {
@@ -670,5 +713,11 @@ main .section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin-right: 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */

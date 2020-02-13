@@ -46,3 +46,9 @@ main {
 .f-col {
   flex-direction: column;
 }
+
+@media (max-width: 600px) {
+  main {
+    margin-right: 0;
+  }
+}

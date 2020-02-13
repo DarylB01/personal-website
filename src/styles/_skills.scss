@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(175, 174, 174, 0.521);
+  background: rgba(175, 174, 174, 0.212);
   .skills__browser {
     background-color: white;
     height: 70%;
@@ -18,7 +18,7 @@
     box-shadow: 15px 19px 19px -16px rgba(0, 0, 0, 0.75);
     margin: 0 auto;
     .browser__nav {
-      background-color: rgba(48, 47, 47, 0.322);
+      background-color: rgba(11, 10, 68, 0.534);
       width: 100%;
       height: 8%;
       border: none;
@@ -57,12 +57,12 @@
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         overflow: hidden;
-        background-color: rgb(212, 209, 209);
+        background-color: rgba(11, 10, 68, 0.534);
         color: white;
         padding-top: 5px;
         text-align: center;
         &:hover {
-          background-color: #8b8b8b;
+          background-color: rgba(11, 10, 68, 0.301);
           color: white;
         }
       }
