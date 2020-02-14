@@ -7,7 +7,7 @@ const Contact = props => {
       <section className="contact__phone">
         <div className="phone__speaker"></div>
         <div className="phone__screen">
-          <form>
+          <form action="https://formspree.io/mlebvbkz" method="POST">
             <header>Get in Touch</header>
             <label for="email">Email Address</label>
             <input name="email" type="email" required></input>

@@ -1,21 +1,128 @@
 .about-container {
   opacity: 0;
   position: relative;
-  background-image: url("../imgs/aboutImg.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   width: 100%;
   height: 100vh;
+  background-color: transparent;
+  .about__monitor {
+    width: 66%;
+    height: 65%;
+    background-color: rgb(29, 28, 28);
+    margin: 0px auto 0 auto;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.75);
+    @include for-phone {
+      margin-top: 40px;
+      height: 50%;
+      width: 95%;
+    }
+    .monitor__bottom {
+      border: none;
+      height: 12%;
+      width: 100%;
+      background-color: rgba(180, 176, 176, 0.658);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .monitor__button {
+        height: 30px;
+        width: 30px;
+        background-color: lightgray;
+        border: 1px solid gray;
+        margin-right: 5%;
+        border-radius: 50%;
+        z-index: 999;
+        @include for-phone {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+  .monitor__stand {
+    height: 7%;
+    width: 10%;
+    background-color: rgb(29, 28, 28);
+    margin: 0 auto;
+    box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.75);
+    @include for-phone {
+      height: 4%;
+    }
+  }
+  .monitor__base {
+    width: 35%;
+    height: 3%;
+    margin: 0 auto;
+    background-color: rgb(29, 28, 28);
+    border-radius: 5px;
+    box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.75);
+    @include for-phone {
+    }
+  }
+  .about__editor {
+    top: 25%;
+    left: 30%;
+    position: absolute;
+    height: 35%;
+    width: 44%;
+    background-color: rgb(26, 26, 25);
+    border: 1px solid inherit;
+    border-radius: 5px;
+    overflow: hidden;
+    opacity: 0.95;
+    @include for-phone {
+      top: 28%;
+      left: 13%;
+      width: 75%;
+    }
+    .editor__taskbar {
+      height: 8%;
+      width: 100%;
+      background-color: rgb(150, 179, 214);
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      .taskbar__buttons {
+        display: flex;
+        margin-left: 10px;
+        .buttons__button {
+          height: 15px;
+          width: 15px;
+          border-radius: 50%;
+          border: 1px solid inherit;
+          margin-right: 10px;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
   .about__text {
     position: absolute;
     padding: 5px;
-    top: 17%;
-    left: 28%;
+    top: 30%;
+    left: 31%;
     height: 40%;
-    width: 45%;
+    width: 40%;
     color: white;
     font-size: 18px;
     font-weight: lighter;
+    @include for-phone {
+      top: 31%;
+      left: 16%;
+      width: 65%;
+      font-size: 16px;
+    }
+    span {
+      font-family: "Source Sans Pro", sans-serif;
+    }
+
     .body {
       margin-top: 50px;
     }

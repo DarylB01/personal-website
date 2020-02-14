@@ -7,7 +7,10 @@ const socialLinks = () => {
   return (
     <section className="social">
       <ul className="social__links">
-        <a className="social__link" href="mailto:dbotengan02@gmail.com">
+        <a
+          className="social__link"
+          href="https://www.facebook.com/profile.php?id=100018023145314"
+        >
           <img src={fbImg} alt="link img" />
         </a>
         <a

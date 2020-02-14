@@ -13,15 +13,13 @@
   flex-direction: column;
   justify-content: flex-start;
   position: fixed;
-  -webkit-perspective: 1000;
   z-index: 299;
+  transition: 0.25s;
   @include for-phone {
-    flex-direction: row;
-    top: 0;
-    height: 60px;
-    width: 100%;
-    padding: 0;
-    align-items: center;
+    position: fixed;
+    max-width: 300px;
+    width: 70%;
+    right: -100vw;
   }
 }
 
@@ -56,7 +54,9 @@
   .avatar-img {
     width: 150px;
     @include for-phone {
-      height: 50px;
+      height: 100px;
+      top: 1%;
+      right: 23%;
     }
   }
 }

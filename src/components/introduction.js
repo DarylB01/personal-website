@@ -4,7 +4,11 @@ import SocialLinks from "./SocialLinks";
 
 const Introduction = props => {
   return (
-    <aside className="intro-container" id="">
+    <aside
+      className="intro-container"
+      id=""
+      style={props.mobMenu ? { right: 0 } : null}
+    >
       <section className="picBio">
         <img src={avatar} alt="avatar img" className="avatar-img"></img>
       </section>
@@ -12,39 +16,39 @@ const Introduction = props => {
         <div className="name">Daryl Botengan</div>
         <p className="aboutMe">Web Developer</p>
       </section>
-      <Navbar activePage={props.activePage} />
+      <Navbar
+        activePage={props.activePage}
+        mobMenu={props.mobMenu}
+        setMobMenu={props.setMobMenu}
+      />
       <SocialLinks />
     </aside>
   );
 };
 
 const Navbar = props => {
-  // scrollFunction();
+  const navItems = ["Home", "Skills", "Projects", "Contact"];
   return (
     <nav id="#myMenu">
       <div className="nav-links">
-        <a data-menuanchor="Home" href="#Home" className="nav-link">
-          Home
-          <hr style={props.activePage === "Home" ? { width: "100%" } : null} />
-        </a>
-        <a data-menuanchor="Skills" href="#Skills" className="nav-link">
-          Skills
-          <hr
-            style={props.activePage === "Skills" ? { width: "100%" } : null}
-          />
-        </a>
-        <a data-menuanchor="Projects" href="#Projects" className="nav-link">
-          Projects
-          <hr
-            style={props.activePage === "Projects" ? { width: "100%" } : null}
-          />
-        </a>
-        <a data-menuanchor="Contact" href="#Contact" className="nav-link">
-          Contact
-          <hr
-            style={props.activePage === "Contact" ? { width: "100%" } : null}
-          />
-        </a>
+        {navItems.map((item, index) => {
+          return (
+            <a
+              key={index}
+              data-menuanchor={item}
+              href={`#${item}`}
+              className="nav-link"
+              onClick={() => {
+                props.setMobMenu(!props.mobMenu);
+              }}
+            >
+              {item}
+              <hr
+                style={props.activePage === item ? { width: "100%" } : null}
+              />
+            </a>
+          );
+        })}
       </div>
     </nav>
   );

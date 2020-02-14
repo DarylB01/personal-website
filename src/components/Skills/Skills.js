@@ -20,6 +20,7 @@ function Skills(props) {
           <img alt="right arrow" src={rightArrow}></img>
           <img alt="refresh img" src={referesh}></img>
           <div className="nav__addbar">
+            http://www.web-dev-skills.com
             <img src={star} alt="star"></img>
           </div>
           <img alt="menu img" src={menu}></img>

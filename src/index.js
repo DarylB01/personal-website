@@ -8,24 +8,50 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import ReactFullpage from "@fullpage/react-fullpage";
+import headshot from "./imgs/headshot.svg";
 
 const Index = () => {
   let [activePage, setActivePage] = useState("Home");
   let [index, setIndex] = useState(0);
   let [lastScroll, setLastScroll] = useState(0);
+  let [mobMenu, setMobMenu] = useState(false);
 
   let about = useRef(null);
   let skills = useRef(null);
   let projects = useRef(null);
   let contact = useRef(null);
 
-  let doms = { about, skills, projects, contact, setActivePage, activePage };
+  let doms = {
+    mobMenu,
+    setMobMenu,
+    about,
+    skills,
+    projects,
+    contact,
+    setActivePage,
+    activePage
+  };
 
   useEffect(() => {}, []);
 
   return (
     <React.Fragment>
-      <Introduction activePage={activePage} />
+      <img
+        alt="avatar"
+        className={
+          mobMenu === false ? "mobile__avatar" : "mobile__avatar --hide"
+        }
+        src={headshot}
+        onClick={() => {
+          setMobMenu(!mobMenu);
+          console.log(mobMenu);
+        }}
+      ></img>
+      <Introduction
+        activePage={activePage}
+        mobMenu={mobMenu}
+        setMobMenu={setMobMenu}
+      />
       <Fullpage doms={doms} />
     </React.Fragment>
   );
@@ -38,9 +64,6 @@ const Fullpage = props => (
     afterLoad={(origin, destination, direction) => {
       props.doms.setActivePage(destination.anchor);
       destination.item.style.opacity = "1";
-      let child1 = destination.item.children[0];
-      let innterChild = child1.childNodes;
-      console.log(innterChild);
     }}
     onLeave={(origin, destination, direction) => {
       props.doms.setActivePage(null);
@@ -50,7 +73,12 @@ const Fullpage = props => (
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>
-          <main id="main">
+          <main
+            id="main"
+            onClick={() => {
+              props.doms.setMobMenu(false);
+            }}
+          >
             <About
               about={props.doms.about}
               activePage={props.doms.activePage}

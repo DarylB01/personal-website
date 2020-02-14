@@ -8,10 +8,6 @@ nav {
   z-index: 999;
   background-color: transparent;
   @include for-phone {
-    background-color: rgba(77, 73, 73, 0.788);
-    position: absolute;
-    top: 60px;
-    margin: 0;
   }
   .nav-links {
     display: flex;
@@ -41,7 +37,7 @@ nav {
     height: 40px;
     transition: color 0.3s;
     @include for-phone {
-      padding-left: 0;
+      padding-left: 0%;
       text-align: center;
     }
     &:focus {
@@ -55,6 +51,9 @@ nav {
       background-color: white;
       border: none;
       transition: 0.2s;
+      @include for-phone {
+        margin-left: 0;
+      }
     }
     &:hover {
       hr {
@@ -62,4 +61,26 @@ nav {
       }
     }
   }
+}
+
+//mobile menu
+.mobile__avatar {
+  position: fixed;
+  right: 5%;
+  top: 1%;
+  height: 8%;
+  z-index: 999;
+  display: none;
+  transition: 0.25s;
+  display: none;
+  @include for-phone {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.--hide {
+  right: 20%;
+  top: 3%;
+  opacity: 0;
 }
