@@ -71,11 +71,11 @@
     position: absolute;
     height: 35%;
     width: 44%;
-    background-color: rgb(26, 26, 25);
+    background-color: rgb(41, 39, 39);
     border: 1px solid inherit;
     border-radius: 5px;
     overflow: hidden;
-    opacity: 0.95;
+    opacity: 0.99;
     @include for-phone {
       top: 28%;
       left: 13%;
@@ -84,7 +84,7 @@
     .editor__taskbar {
       height: 8%;
       width: 100%;
-      background-color: rgb(150, 179, 214);
+      background-color: rgb(168, 173, 180);
       display: flex;
       width: 100%;
       justify-content: space-between;

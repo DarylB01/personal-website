@@ -145,7 +145,7 @@
 }
 
 .skills__container .skills__browser .browser__nav {
-  background-color: rgba(11, 10, 68, 0.534);
+  background-color: rgba(20, 61, 138, 0.534);
   width: 100%;
   height: 8%;
   border: none;
@@ -225,14 +225,14 @@
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   overflow: hidden;
-  background-color: rgba(11, 10, 68, 0.534);
+  background-color: rgba(20, 61, 138, 0.534);
   color: white;
   padding-top: 5px;
   text-align: center;
 }
 
 .skills__container .skills__browser .browser__tabs .browser__tab:hover {
-  background-color: rgba(11, 10, 68, 0.301);
+  background-color: rgba(20, 61, 138, 0.616);
   color: white;
 }
 
@@ -336,6 +336,12 @@
 @media (max-width: 1024px) {
   .projects .projectList {
     width: 98%;
+  }
+}
+
+@media (max-width: 1024px) and (max-width: 1024px) {
+  .projects .projectList {
+    margin-top: 14%;
   }
 }
 
@@ -588,11 +594,11 @@
   position: absolute;
   height: 35%;
   width: 44%;
-  background-color: #1a1a19;
+  background-color: #292727;
   border: 1px solid inherit;
   border-radius: 5px;
   overflow: hidden;
-  opacity: 0.95;
+  opacity: 0.99;
 }
 
 @media (max-width: 1024px) {
@@ -606,7 +612,7 @@
 .about-container .about__editor .editor__taskbar {
   height: 8%;
   width: 100%;
-  background-color: #96b3d6;
+  background-color: #a8adb4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -904,8 +910,8 @@ nav a:hover hr {
 }
 
 .area {
-  background: #4e54c8;
-  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  background: #387dd6ec;
+  background: -webkit-linear-gradient(to left, #070a11, #0c0a1f);
   width: 95%;
   height: 80%;
   margin: 20px auto;
@@ -944,7 +950,7 @@ nav a:hover hr {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.575);
   -webkit-animation: animate 25s linear infinite;
           animation: animate 25s linear infinite;
   bottom: -150px;
@@ -1089,7 +1095,7 @@ nav a:hover hr {
 
 body {
   margin: 0;
-  background-color: rgba(4, 62, 85, 0.103);
+  background-color: rgba(174, 181, 184, 0.103);
 }
 
 main {

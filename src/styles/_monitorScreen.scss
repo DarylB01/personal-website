@@ -1,6 +1,6 @@
 .area {
-  background: #4e54c8;
-  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  background: #387dd6ec;
+  background: -webkit-linear-gradient(to left, #070a11, #0c0a1f);
   width: 95%;
   height: 80%;
   margin: 20px auto;
@@ -34,7 +34,7 @@
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.575);
   animation: animate 25s linear infinite;
   bottom: -150px;
   @include for-phone {
