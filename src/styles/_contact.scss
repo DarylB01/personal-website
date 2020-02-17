@@ -8,8 +8,8 @@
 
   .contact__phone {
     background-color: white;
-    height: 90%;
-    width: 35%;
+    height: 700px;
+    width: 380px;
     border: 5px double darkgrey;
     border-radius: 30px;
     box-shadow: 15px 19px 19px -16px rgba(0, 0, 0, 0.75);
@@ -18,6 +18,8 @@
       margin-top: 50px;
       height: 85%;
       width: 85%;
+      max-width: 300px;
+      max-height: 600px;
     }
     .phone__speaker {
       height: 10px;
@@ -83,10 +85,10 @@
       }
     }
     .phone__button {
-      height: 50px;
-      width: 50px;
+      height: 40px;
+      width: 40px;
       border: 2px solid darkgray;
-      margin: 2% auto;
+      margin: 4% auto;
       border-radius: 50%;
       @include for-phone {
         height: 30px;

@@ -2,10 +2,10 @@
   padding-top: 50px;
   margin: 0 auto;
   height: 100vh;
-  width: 25%;
+  width: 22%;
   top: 0;
   right: 0;
-  background-color: rgba(8, 79, 145, 0.637);
+  background-color: rgba(7, 80, 148, 0.719);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,7 +48,7 @@
 
 .introduction .name {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -62,7 +62,7 @@
 .introduction .aboutMe {
   margin-top: 5px;
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 100;
 }
 
@@ -77,7 +77,7 @@
 }
 
 .picBio .avatar-img {
-  width: 150px;
+  width: 30%;
 }
 
 @media (max-width: 1024px) {
@@ -276,8 +276,8 @@
 
 @media (max-width: 1024px) {
   .skills__container .skills__browser .browser__content figure img {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
   }
 }
 
@@ -805,8 +805,8 @@ nav a:hover hr {
 
 .contact .contact__phone {
   background-color: white;
-  height: 90%;
-  width: 35%;
+  height: 700px;
+  width: 380px;
   border: 5px double darkgrey;
   border-radius: 30px;
   -webkit-box-shadow: 15px 19px 19px -16px rgba(0, 0, 0, 0.75);
@@ -819,6 +819,8 @@ nav a:hover hr {
     margin-top: 50px;
     height: 85%;
     width: 85%;
+    max-width: 300px;
+    max-height: 600px;
   }
 }
 
@@ -895,10 +897,10 @@ nav a:hover hr {
 }
 
 .contact .contact__phone .phone__button {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   border: 2px solid darkgray;
-  margin: 2% auto;
+  margin: 4% auto;
   border-radius: 50%;
 }
 
@@ -911,7 +913,7 @@ nav a:hover hr {
 
 .area {
   background: #387dd6ec;
-  background: -webkit-linear-gradient(to left, #070a11, #0c0a1f);
+  background: -webkit-linear-gradient(to left, #2f8cc2, #105791);
   width: 95%;
   height: 80%;
   margin: 20px auto;
@@ -1099,7 +1101,7 @@ body {
 }
 
 main {
-  margin-right: 25%;
+  margin-right: 22%;
   position: relative;
 }
 

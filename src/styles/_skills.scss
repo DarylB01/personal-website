@@ -108,8 +108,8 @@
           width: 100px;
           opacity: 0.9;
           @include for-phone {
-            height: 80px;
-            width: 80px;
+            height: 60px;
+            width: 60px;
           }
         }
         figcaption {

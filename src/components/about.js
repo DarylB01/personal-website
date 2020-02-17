@@ -54,15 +54,15 @@ const about = props => {
             <br />
             <Typist.Delay ms={300} />
             <span className="body">
-              I'm a self-taught full-stack web developer who specializes in the
+              I'm a freelance full-stack web developer that specializes in the
               use of the MERN stack.
             </span>
             <Typist.Delay ms={300} />
             <br />
             <br />
             <span className="body">
-              Outside of web development, I actively participate in musical endeavors
-              and an endless pursuit for self-improvement.
+              Outside of web development, I actively participate in musical
+              endeavors and an endless pursuit for self-improvement.
             </span>
           </Typist>
         )}
