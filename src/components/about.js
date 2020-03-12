@@ -1,5 +1,4 @@
 import React from "react";
-import ScrollAnimation from "react-animate-on-scroll";
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
 
@@ -47,25 +46,23 @@ const about = props => {
         </div>
       </section>
       <div className="about__text">
-        {props.activePage !== "Home" ? null : (
-          <Typist avgTypingDelay={5} startDelay={500}>
-            <span> Hello, my name is Daryl Botengan.</span>
-            <br />
-            <br />
-            <Typist.Delay ms={300} />
-            <span className="body">
-              I'm a freelance full-stack web developer that specializes in the
-              use of the MERN stack.
-            </span>
-            <Typist.Delay ms={300} />
-            <br />
-            <br />
-            <span className="body">
-              Outside of web development, I actively participate in musical
-              endeavors and an endless pursuit for self-improvement.
-            </span>
-          </Typist>
-        )}
+        <Typist avgTypingDelay={5} startDelay={2000}>
+          <span> Hello, my name is Daryl Botengan.</span>
+          <br />
+          <br />
+          <Typist.Delay ms={300} />
+          <span className="body">
+            I'm a freelance Web Developer that specializes in the use
+            of the MERN stack.
+          </span>
+          <Typist.Delay ms={300} />
+          <br />
+          <br />
+          <span className="body">
+            Outside of web development, I actively participate in musical
+            endeavors and an endless pursuit for self-improvement.
+          </span>
+        </Typist>
       </div>
     </section>
   );

@@ -68,7 +68,7 @@
         cursor: pointer;
         padding-bottom: 1px;
         height: 100%;
-        width: 18%;
+        width: 15%;
         border: 1px solid inherit(128, 128, 128, 0.247);
         border-bottom: none;
         border-radius: 10px;
@@ -108,14 +108,19 @@
           width: 100px;
           opacity: 0.9;
           @include for-phone {
-            height: 60px;
-            width: 60px;
+            height: 50px;
+            width: 50px;
           }
         }
         figcaption {
+          
           font-size: 20px;
           margin-top: 20px;
           color: rgba(0, 0, 0, 0.699);
+          @include for-phone {
+            font-size: 15px;
+            
+          }
         }
       }
     }

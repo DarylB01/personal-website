@@ -13,7 +13,7 @@ const Other = props => {
     >
       <figure>
         <img alt="VSC img" src={vscImg} />
-        <figcaption>Visual Studio Code</figcaption>
+        <figcaption>VS Code</figcaption>
       </figure>
       <figure>
         <img alt="git" src={gitImg} />

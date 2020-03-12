@@ -7,9 +7,10 @@
   overflow: hidden;
 
   @include for-phone {
+    margin: 10px auto;
     border-radius: 5px;
-    width: 90%;
-    height: 78%;
+    width: 95%;
+    height: 87%;
   }
 }
 
@@ -24,7 +25,7 @@
   @include for-phone {
     border-radius: 5px;
     width: 90%;
-    height: 78%;
+    height: 82%;
   }
 }
 

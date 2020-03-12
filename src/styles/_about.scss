@@ -14,8 +14,9 @@
     position: relative;
     box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.75);
     @include for-phone {
+      border-radius: 10px;
       margin-top: 40px;
-      height: 50%;
+      height: 40%;
       width: 95%;
     }
     .monitor__bottom {
@@ -29,6 +30,9 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      @include for-phone {
+        height: 6%;
+      }
 
       .monitor__button {
         height: 30px;
@@ -39,8 +43,8 @@
         border-radius: 50%;
         z-index: 999;
         @include for-phone {
-          width: 20px;
-          height: 20px;
+          width: 10px;
+          height: 10px;
         }
       }
     }
@@ -52,7 +56,8 @@
     margin: 0 auto;
     box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.75);
     @include for-phone {
-      height: 4%;
+      height: 2%;
+      width: 7%;
     }
   }
   .monitor__base {
@@ -63,6 +68,8 @@
     border-radius: 5px;
     box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.75);
     @include for-phone {
+      height: 1.5%;
+      width: 40%;
     }
   }
   .about__editor {
@@ -77,9 +84,10 @@
     overflow: hidden;
     opacity: 0.99;
     @include for-phone {
-      top: 28%;
-      left: 13%;
+      top: 34%;
+      left: 14%;
       width: 75%;
+      height: 30%;
     }
     .editor__taskbar {
       height: 8%;
@@ -99,6 +107,10 @@
           border: 1px solid inherit;
           margin-right: 10px;
           opacity: 0.6;
+          @include for-phone {
+            height: 12px;
+            width: 12px;
+          }
         }
       }
     }
@@ -114,10 +126,10 @@
     font-size: 18px;
     font-weight: lighter;
     @include for-phone {
-      top: 31%;
-      left: 16%;
-      width: 65%;
-      font-size: 16px;
+      top: 36%;
+      left: 15%;
+      width: 72%;
+      font-size: 14px;
     }
     span {
       font-family: "Source Sans Pro", sans-serif;
