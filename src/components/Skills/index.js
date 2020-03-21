@@ -40,7 +40,7 @@ function Skills(props) {
 
         <section className="browser__tabs">
           {skillArray.map((item, index) => {
-            //Each tab change state
+            //Each tab changes state
             return (
               <div
                 key={index}
