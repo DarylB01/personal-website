@@ -1,7 +1,9 @@
 import React from "react";
-import fbImg from "../imgs/socialLinks/facebook.png";
-import linkedInImg from "../imgs/socialLinks/linkedin.png";
-import gitHubImg from "../imgs/socialLinks/github-logo.png";
+
+//Images
+import fbImg from "../../imgs/socialLinks/facebook.png";
+import linkedInImg from "../../imgs/socialLinks/linkedin.png";
+import gitHubImg from "../../imgs/socialLinks/github-logo.png";
 
 const socialLinks = () => {
   return (

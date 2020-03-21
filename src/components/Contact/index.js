@@ -1,5 +1,4 @@
 import React from "react";
-import ScrollAnimation from "react-animate-on-scroll";
 
 const Contact = props => {
   return (
@@ -7,13 +6,14 @@ const Contact = props => {
       <section className="contact__phone">
         <div className="phone__speaker"></div>
         <div className="phone__screen">
+          {/* Form uses formspree to handle sending emails */}
           <form action="https://formspree.io/mlebvbkz" method="POST">
             <header>Get in Touch</header>
-            <label for="email">Email Address</label>
+            <label htmlFor="email">Email Address</label>
             <input name="email" type="email" required></input>
-            <label for="subject">Subject</label>
+            <label htmlFor="subject">Subject</label>
             <input name="subject" type="text" required></input>
-            <label for="message">Message</label>
+            <label htmlFor="message">Message</label>
             <textarea
               className="message"
               required

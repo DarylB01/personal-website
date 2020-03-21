@@ -1,15 +1,16 @@
-import gladzyPic from "../imgs/project-imgs/gladzy-pic.jpg";
-import weatherImg from "../imgs/project-imgs/weather.svg";
-import restaurantImg from "../imgs/project-imgs/restaurant.jpg";
-import ticTacToeImg from "../imgs/project-imgs/tic-tac-toe.svg";
-import blogImg from "../imgs/project-imgs/blog.jpg";
+//Website backgrounds
+import gladzyPic from "../../imgs/project-imgs/gladzy-pic.jpg";
+import weatherImg from "../../imgs/project-imgs/weather.svg";
+import restaurantImg from "../../imgs/project-imgs/restaurant.jpg";
+import ticTacToeImg from "../../imgs/project-imgs/tic-tac-toe.svg";
+import blogImg from "../../imgs/project-imgs/blog.jpg";
 
 //Website Logos
-import gladzyLogo from "../imgs/project-imgs/gladzy-logo.png";
-import blogLogo from "../imgs/project-imgs/blog-logo.png";
-import weatherLogo from "../imgs/project-imgs/weather-logo.png";
-import restaurantLogo from "../imgs/project-imgs/restaurant-logo.png";
-import tictactoelogo from "../imgs/project-imgs/tictactoe-logo.png";
+import gladzyLogo from "../../imgs/project-imgs/gladzy-logo.png";
+import blogLogo from "../../imgs/project-imgs/blog-logo.png";
+import weatherLogo from "../../imgs/project-imgs/weather-logo.png";
+import restaurantLogo from "../../imgs/project-imgs/restaurant-logo.png";
+import tictactoelogo from "../../imgs/project-imgs/tictactoe-logo.png";
 
 class Project {
   constructor(title, imgSrc, desc, demo, siteColor, logo) {

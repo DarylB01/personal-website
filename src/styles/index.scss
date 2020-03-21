@@ -1,11 +1,14 @@
-@import "./introduction";
-@import "./skills";
-@import "./projects";
-@import "./socialLinks";
-@import "./about";
-@import "./nav";
-@import "./contact";
-@import "./monitorScreen";
+@import "./variables";
+@import "./mixins";
+@import "./Navbar/navbar";
+@import "./Skills/skills";
+@import "./Projects/projects";
+@import "./Navbar/socialLinks";
+@import "./About/about";
+@import "./About/monitorScreen";
+@import "./Navbar/navigation";
+@import "./Contact/contact";
+
 * {
   padding: 0;
   margin: 0;

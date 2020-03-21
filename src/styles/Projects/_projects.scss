@@ -1,11 +1,11 @@
-@import "./variables";
+
 
 .projects-imgFilter {
   height: 100%;
   width: 100%;
   position: absolute;
   bottom: 0;
-  opacity: 0.9;
+  opacity: 0.8;
   display: flex;
 }
 
@@ -59,15 +59,15 @@
       .projLogo {
         position: absolute;
         top: 35%;
-        left: 15%;
+        left: 20%;
         display: block;
         z-index: 50;
         height: auto;
-        width: 70%;
+        width: 60%;
         filter: invert(100%);
         @include for-phone {
-          width: 90%;
-          left: 5%;
+          width: 75%;
+          left: 13%;
         }
       }
       .projImg {

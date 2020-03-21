@@ -1,56 +1,53 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import "./styles/index.css";
 import * as serviceWorker from "./serviceWorker";
-import Skills from "./components/Skills/Skills";
-import Introduction from "./components/Introduction";
-import Projects from "./components/Projects";
-import About from "./components/About";
-import Contact from "./components/Contact";
+
+//Components
+import Skills from "./components/Skills";
+import Navbar from "./components/Navbar/index";
+import Projects from "./components/Projects/index";
+import About from "./components/About/index";
+import Contact from "./components/Contact/index";
+
+//module to scroll only in full pages length
 import ReactFullpage from "@fullpage/react-fullpage";
+
+//avatar img
 import headshot from "./imgs/headshot.svg";
 
 const Index = () => {
   let [activePage, setActivePage] = useState("Home");
-  let [index, setIndex] = useState(0);
-  let [lastScroll, setLastScroll] = useState(0);
-  let [mobMenu, setMobMenu] = useState(false);
+  let [mobileMenu, setMobileMenu] = useState(false);
 
-  let about = useRef(null);
-  let skills = useRef(null);
-  let projects = useRef(null);
-  let contact = useRef(null);
-
+  //props being passed down to lower components
   let doms = {
-    mobMenu,
-    setMobMenu,
-    about,
-    skills,
-    projects,
-    contact,
+    mobileMenu,
+    setMobileMenu,
     setActivePage,
     activePage
   };
 
-  useEffect(() => {}, []);
-
   return (
     <React.Fragment>
+      {/* Mobile menu only shows on smaller devices */}
       <img
         alt="avatar"
         className={
-          mobMenu === false ? "mobile__avatar" : "mobile__avatar --hide"
+          mobileMenu === false ? "mobile__avatar" : "mobile__avatar --hide"
         }
         src={headshot}
         onClick={() => {
-          setMobMenu(!mobMenu);
-          console.log(mobMenu);
+          setMobileMenu(!mobileMenu);
+          console.log(mobileMenu);
         }}
       ></img>
-      <Introduction
+      {/* Mobile menu only shows on smaller devices */}
+
+      <Navbar
         activePage={activePage}
-        mobMenu={mobMenu}
-        setMobMenu={setMobMenu}
+        mobileMenu={mobileMenu}
+        setMobileMenu={setMobileMenu}
       />
       <Fullpage doms={doms} />
     </React.Fragment>
@@ -59,33 +56,32 @@ const Index = () => {
 
 const Fullpage = props => (
   <ReactFullpage
-    anchors={["Home", "Skills", "Projects", "Contact"]}
+    anchors={["About", "Skills", "Projects", "Contact"]}
     licenseKey={"1B4AEBBA-C7144838-8F26F81F-0FF50C3D"}
+    //Execute functions when entering destination page
     afterLoad={(origin, destination, direction) => {
       props.doms.setActivePage(destination.anchor);
       destination.item.style.opacity = "1";
     }}
+    //Execute Functions When leaving current page
     onLeave={(origin, destination, direction) => {
       props.doms.setActivePage(null);
       origin.item.style.opacity = "0";
     }}
     scrollingSpeed={400} /* Options here */
-    render={({ state, fullpageApi }) => {
+    render={() => {
       return (
         <ReactFullpage.Wrapper>
           <main
             id="main"
             onClick={() => {
-              props.doms.setMobMenu(false);
+              props.doms.setMobileMenu(false);
             }}
           >
-            <About
-              about={props.doms.about}
-              activePage={props.doms.activePage}
-            />
-            <Skills skills={props.doms.skills} />
-            <Projects projects={props.doms.projects} />
-            <Contact contact={props.doms.contact} />
+            <About />
+            <Skills />
+            <Projects />
+            <Contact />
           </main>
         </ReactFullpage.Wrapper>
       );
