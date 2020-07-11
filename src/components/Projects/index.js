@@ -1,7 +1,7 @@
 import React from "react";
 import projectList from "./projectList";
 
-const Projects = props => {
+const Projects = (props) => {
   return (
     <section className="projects  section" ref={props.projects}>
       <section className="projectList">
@@ -20,10 +20,27 @@ const Projects = props => {
               className="projLogo"
               alt=""
               src={project.logo ? project.logo : null}
+              style={
+                project.title === "Calgary Filipino Methodist Church"
+                  ? {
+                      filter: "invert(0%)",
+                    }
+                  : null
+              }
             ></img>
             <div className="projInfo">
-              <a href={project.src.demo}>
-                <div className="projTitle">View Website</div>
+              <a
+                href={
+                  project.title === "Calgary Filipino Methodist Church"
+                    ? null
+                    : project.src.demo
+                }
+              >
+                <div className="projTitle">
+                  {project.title === "Calgary Filipino Methodist Church"
+                    ? "In Progress"
+                    : "View Website"}
+                </div>
               </a>
               <p>{project.desc}</p>
             </div>

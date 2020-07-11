@@ -2,7 +2,7 @@
 import gladzyPic from "../../imgs/project-imgs/gladzy-pic.jpg";
 import weatherImg from "../../imgs/project-imgs/weather.svg";
 import restaurantImg from "../../imgs/project-imgs/restaurant.jpg";
-import ticTacToeImg from "../../imgs/project-imgs/tic-tac-toe.svg";
+import cfmcImg from "../../imgs/project-imgs/cfmcImg.jpg";
 import blogImg from "../../imgs/project-imgs/blog.jpg";
 
 //Website Logos
@@ -10,7 +10,7 @@ import gladzyLogo from "../../imgs/project-imgs/gladzy-logo.png";
 import blogLogo from "../../imgs/project-imgs/blog-logo.png";
 import weatherLogo from "../../imgs/project-imgs/weather-logo.png";
 import restaurantLogo from "../../imgs/project-imgs/restaurant-logo.png";
-import tictactoelogo from "../../imgs/project-imgs/tictactoe-logo.png";
+import cfmcLogo from "../../imgs/project-imgs/cfmcLogoWhite.png";
 
 class Project {
   constructor(title, imgSrc, desc, demo, siteColor, logo) {
@@ -22,6 +22,15 @@ class Project {
     this.logo = logo;
   }
 }
+const cfmcSite = new Project(
+  "Calgary Filipino Methodist Church",
+  cfmcImg,
+  "Website for local Calgary Church",
+  "https://cfmc.netlify.com/",
+  "#003a69",
+  cfmcLogo
+);
+
 const gladzySite = new Project(
   "Gladzy Kei Art & Cosplay",
   gladzyPic,
@@ -38,14 +47,6 @@ const blog = new Project(
   "black",
   blogLogo
 );
-const restaurant = new Project(
-  "Restaurant Website",
-  restaurantImg,
-  "Demo site of made-up restaurant",
-  "https://darylb01-restaurant.netlify.com",
-  "#304E5C",
-  restaurantLogo
-);
 const Weather = new Project(
   "Weather",
   weatherImg,
@@ -54,15 +55,7 @@ const Weather = new Project(
   "#032c3f",
   weatherLogo
 );
-const ticTacToe = new Project(
-  "Tic Tac Toe",
-  ticTacToeImg,
-  "Classic game that you can play with friends or an AI",
-  "https://darylb01-tic-tac-toe.netlify.com/",
-  "black",
-  tictactoelogo
-);
 
-const projectList = [gladzySite, blog, Weather, restaurant, ticTacToe];
+const projectList = [cfmcSite, gladzySite, Weather, blog];
 
 export default projectList;
