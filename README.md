@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Personal Website
+## Introduction
+Simple static website showcasing my skills and recent projects as a developer.
 
 ## Available Scripts
 
@@ -22,3 +24,5 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+## Author
+Daryl Botengan
