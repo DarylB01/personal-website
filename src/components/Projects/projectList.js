@@ -1,16 +1,13 @@
 //Website backgrounds
 import gladzyPic from "../../imgs/project-imgs/gladzy-pic.jpg";
 import weatherImg from "../../imgs/project-imgs/weather.svg";
-import restaurantImg from "../../imgs/project-imgs/restaurant.jpg";
 import cfmcImg from "../../imgs/project-imgs/cfmcImg.jpg";
-import blogImg from "../../imgs/project-imgs/blog.jpg";
-
+import etchASketchImg from "../../imgs/project-imgs/etchASketchImg.jpg";
 //Website Logos
 import gladzyLogo from "../../imgs/project-imgs/gladzy-logo.png";
-import blogLogo from "../../imgs/project-imgs/blog-logo.png";
 import weatherLogo from "../../imgs/project-imgs/weather-logo.png";
-import restaurantLogo from "../../imgs/project-imgs/restaurant-logo.png";
 import cfmcLogo from "../../imgs/project-imgs/cfmcLogoWhite.png";
+import etchASketchLogo from "../../imgs/project-imgs/etchASketch-logo.png";
 
 class Project {
   constructor(title, imgSrc, desc, demo, siteColor, logo) {
@@ -39,23 +36,23 @@ const gladzySite = new Project(
   "rgb(46, 2, 59)",
   gladzyLogo
 );
-const blog = new Project(
-  "Blog Demo",
-  blogImg,
-  "A demo blog website with a functioning front-end and back-end",
-  "https://darylb01-blog.netlify.com/#/home",
+const etchASketch = new Project(
+  "Etch-A-Sketch",
+  etchASketchImg,
+  "Simple drawing app made with JavaScript",
+  "https://daryl-etch-app.netlify.app/",
   "black",
-  blogLogo
+  etchASketchLogo
 );
 const Weather = new Project(
   "Weather",
   weatherImg,
   "Weather App that works with most countries and cities around the world",
-  "https://darylb01-weather.netlify.com",
+  "https://darylb01-weather.netlify.app/",
   "#032c3f",
   weatherLogo
 );
 
-const projectList = [cfmcSite, gladzySite, Weather, blog];
+const projectList = [cfmcSite, gladzySite, Weather, etchASketch];
 
 export default projectList;
