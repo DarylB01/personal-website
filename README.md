@@ -2,6 +2,9 @@
 ## Introduction
 Simple static website that showcases my most recent work as a developer.
 
+## URL
+https://www.darylb01-portfolio.com/
+
 ## Available Scripts
 
 In the project directory, you can run:
