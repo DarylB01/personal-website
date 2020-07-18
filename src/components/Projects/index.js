@@ -29,13 +29,7 @@ const Projects = (props) => {
               }
             ></img>
             <div className="projInfo">
-              <a
-                href={
-                  project.title === "Calgary Filipino Methodist Church"
-                    ? null
-                    : project.src.demo
-                }
-              >
+              <a href={project.src.demo}>
                 <div className="projTitle">
                   {project.title === "Calgary Filipino Methodist Church"
                     ? "In Progress"
